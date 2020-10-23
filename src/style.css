@@ -1,0 +1,15 @@
+.name {
+    color: red;
+}
+
+.lastName {
+    color: red;
+}
+
+.birthday {
+    font-style: italic;
+}
+
+.phoneNumber {
+    font-weight: bold;
+}

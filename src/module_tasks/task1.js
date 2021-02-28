@@ -1,26 +1,26 @@
-const km = 1000;
-const sm = 100000;
+const meters = 1000;
+const centimeters = 100000;
 
-const getPromptMeters = () => {
+const getPromptKm = () => {
   return +prompt("Введите расстояние в километрах");
 };
 
-const getAlertsResults = (meters) => {
-  alert(`${meters * km} метров`);
-  alert(`${meters * sm} сантиметров`);
+const getAlertsResults = (km) => {
+  alert(`${km * meters} метров`);
+  alert(`${km * centimeters} сантиметров`);
 };
 
 export const task = () => {
-  const meters = getPromptMeters();
-  while (isNaN(meters)) {
+  const km = getPromptKm();
+  while (isNaN(km)) {
     alert("Введите число");
-    const meters = getPromptMeters();
-    if (!isNaN(meters)) {
-      getAlertsResults(meters);
+    const km = getPromptKm();
+    if (!isNaN(km)) {
+      getAlertsResults(km);
       return;
     }
   }
-  if (!isNaN(meters)) {
-    getAlertsResults(meters);
+  if (!isNaN(km)) {
+    getAlertsResults(km);
   }
 };

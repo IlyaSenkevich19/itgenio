@@ -18,7 +18,4 @@ export const task2 = () => {
    const email = document.querySelector('.email');
    const promptEmail = prompt('Введите свой email');
    email.innerHTML = promptEmail;
-
-    
-
 };
